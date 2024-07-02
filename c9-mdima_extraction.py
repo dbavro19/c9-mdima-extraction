@@ -488,10 +488,10 @@ st.write("---")
 #uploaded_file = st.file_uploader('Upload a .pdf file', type="pdf") Hardcopind this for Cloud9
 st.write("---")
     
-uploaded_file = "AMZN-Q1-2024-Earnings-Release.pdf"
+uploaded_file = "Discretionary-Investment-Management-Agreement.pdf"
 
 go=st.button("Go!")
 if go and uploaded_file is not None:
     st.balloons()
-    file_name = uploaded_file.name
+    #file_name = uploaded_file.name harcdoingfor C9
     extract(uploaded_file, uploaded_file)
